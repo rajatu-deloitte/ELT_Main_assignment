@@ -2,20 +2,35 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: mile1part1
+    description: "Monthly average for different attributes"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: code
+        description: "Code of each scheme"
         tests:
           - unique
           - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: mile1part2_max
+    description: "Maximum Nav for each scheme"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: code
+        description: "Code of each scheme"
+        tests:
+          - unique
+          - not_null
+  - name: mile1part2_min
+    description: "Minimum Nav for each scheme"
+    columns:
+      - name: code
+        description: "Code of each scheme"
+        tests:
+          - unique
+          - not_null
+  - name: mile2part3
+    description: "List of mutual funds which were discontinued in a given year"
+    columns:
+      - name: code
+        description: "Code of each scheme"
         tests:
           - unique
           - not_null
