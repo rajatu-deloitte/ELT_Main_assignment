@@ -7,4 +7,8 @@
 
 ### Approach
 
-
+- Created tables for all CSV on snowflake. Queries are present in `queries.sql` in `assets` folder
+- Uploaded the CSV file and populated the data in the created tables
+- Initialized the dbt project with `dbt init mainasgt`
+- Created the queries for Milestone 1 and Milestone 2 and tried with `dbt run` command. Find the screenshots in `assets` folder and the `9. success` file
+- For the data studio assignment of Milestone 3, create data source and upload CSV files and created charts accordingly.

@@ -8,7 +8,6 @@ models:
       - name: code
         description: "Code of each scheme"
         tests:
-          - unique
           - not_null
   - name: mile1part2_max
     description: "Maximum Nav for each scheme"
@@ -16,7 +15,6 @@ models:
       - name: code
         description: "Code of each scheme"
         tests:
-          - unique
           - not_null
   - name: mile1part2_min
     description: "Minimum Nav for each scheme"
@@ -24,7 +22,6 @@ models:
       - name: code
         description: "Code of each scheme"
         tests:
-          - unique
           - not_null
   - name: mile2part3
     description: "List of mutual funds which were discontinued in a given year"
